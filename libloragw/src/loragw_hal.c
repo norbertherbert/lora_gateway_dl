@@ -230,7 +230,7 @@ void lgw_constant_adjust(void) {
 
     /* I/Q path setup */
     // lgw_reg_w(LGW_RX_INVERT_IQ,0); /* default 0 */
-    // lgw_reg_w(LGW_MODEM_INVERT_IQ,1); /* default 1 */
+    lgw_reg_w(LGW_MODEM_INVERT_IQ,0); /* default 1 ////////// */
     // lgw_reg_w(LGW_CHIRP_INVERT_RX,1); /* default 1 */
     // lgw_reg_w(LGW_RX_EDGE_SELECT,0); /* default 0 */
     // lgw_reg_w(LGW_MBWSSF_MODEM_INVERT_IQ,0); /* default 0 */
@@ -279,7 +279,7 @@ void lgw_constant_adjust(void) {
     }
 
     // lgw_reg_w(LGW_PREAMBLE_FINE_TIMING_GAIN,1); /* default 1 */
-    // lgw_reg_w(LGW_ONLY_CRC_EN,1); /* default 1 */
+    lgw_reg_w(LGW_ONLY_CRC_EN,0); /* default 1 ////////// */
     // lgw_reg_w(LGW_PAYLOAD_FINE_TIMING_GAIN,2); /* default 2 */
     // lgw_reg_w(LGW_TRACKING_INTEGRAL,0); /* default 0 */
     // lgw_reg_w(LGW_ADJUST_MODEM_START_OFFSET_RDX8,0); /* default 0 */
